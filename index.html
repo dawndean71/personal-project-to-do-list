@@ -1,0 +1,92 @@
+<!-- CODE EXPLAINED CHANNEL -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawn's To Do List</title>
+    <!-- link all external css files -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- import my own stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="backdrop-filter: blur(15px);
+backdrop-filter: drop-shadow(15px 4px 10px blue);">
+    <!-- Structure of document:
+        <div container>
+            <div header>
+            // refresh button goes here
+            // date goes here
+            </div>
+            <div content>
+                // unordered list
+                <ul list>
+                </ul>
+                <div add-tem>
+                </div>
+            </div>
+        //close parent div container
+        </div container>     
+    -->
+   <div class="masterContainer">
+       
+    <!-- Digital Clock -->
+    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+    <!-- H1- -->
+    <div class="toDoListTitle" style="text-align: center;">
+        <h1 class="titleBorder">My Hustle List</h1>
+        <!-- Daily Randomize Quote -->
+        <h4 id="randomQuote" ></h4>
+    </div>
+    
+  
+    <div class="container">
+        <div class="header">
+            <!-- Place refresh button here -->
+            <div class="clear">
+                <i class="fa fa-refresh"></i>
+            </div>
+            <!-- Place date div here -->
+            <div id="date"></div>
+        </div>
+        <div class="content">
+            <!-- Place unordered list here-->
+            <ul id="list">
+                <!--create the item block template with the 4 main properties: text, id, done, trash-->
+                <!-- <li class="item"> -->
+                    <!-- circle icon to the left -->
+                   <!--<i class="fa fa-circle-thin co" job="complete" id="0"></i> -->
+                    <!-- item text -->
+                    <!-- <p class="text">Edit Twillz Video</p> -->
+                    <!-- trash icon to the right -->
+                    <!-- <i class="fa fa-trash-o de" job="delete" id="0"></i> -->
+                <!-- </li> -->            
+            </ul>
+            <!--  Place add item feature here -->
+            <div class="add-to-do">
+                <i class="fa fa-plus-circle"></i>
+                <!-- create a user input text box -->
+                <input type="text" id="input" placeholder="Add an item">
+        
+            </div>
+        </div>
+    </div>
+    <!-- Audio File -->
+    <div style="margin: 0 auto; display:table;" >
+        <audio controls id="audio">
+        <source src="/Users/armanitribe/Downloads/To-Do-List-master/Nipsey Hussle - Stucc In The Grind.mp3" type="audio/mpeg">
+    </audio>
+    </div>
+    
+
+    </div>
+    
+    <!-- Link external js file -->
+    <script src="js/app.js"></script>
+    <script src="js/clockApp.js"></script>
+    <script src="js/audioApp.js"></script>
+    <script src="js/quoteApp.js"></script>
+    
+</body>
+</html>
